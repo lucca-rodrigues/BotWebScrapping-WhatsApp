@@ -31,7 +31,7 @@ const main = async function (WhatsApp) {
 
   console.log("allProducts", allProducts);
 
-  await fs.writeFileSync(
+  fs.writeFileSync(
     "./src/ScrapperResponses/products.json",
     JSON.stringify(allProducts, null, 2)
   );

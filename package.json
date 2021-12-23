@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,12 @@
   },
   "homepage": "https://github.com/lucca-rodrigues/BotWebScrapping-WhatsApp#readme",
   "dependencies": {
+    "express": "^4.17.2",
     "node-schedule": "^2.1.0",
     "puppeteer": "^13.0.1",
     "venom-bot": "^4.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
