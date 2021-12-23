@@ -28,7 +28,13 @@ const main = async function (WhatsApp) {
     );
     return products;
   });
+
   console.log("allProducts", allProducts);
+
+  await fs.writeFileSync(
+    "./src/ScrapperResponses/products.json",
+    JSON.stringify(allProducts, null, 2)
+  );
 
   await page.close();
 };
