@@ -14,25 +14,11 @@ const main = async function () {
 
   await page.addScriptTag({ path: "./src/Scrappers/getProducts.js" });
 
-  console.log("Listando produtos...");
+  console.log("Listando produtos... ✅ ");
 
   const allProducts = await page.evaluate(() => {
     return products;
   });
-  // console.log("Listando produtos...");
-  // const allProducts = await page.evaluate(() => {
-  //   const products = Array.from(document.querySelectorAll("#ad-list li")).map(
-  //     (item) => {
-  //       return {
-  //         title: item.querySelector("h2")?.innerText,
-  //         link: item.querySelector("a")?.baseURI,
-  //         image: item.querySelector("img")?.src,
-  //         price: item.querySelector(".fnmrjs-9 span")?.innerText,
-  //       };
-  //     }
-  //   );
-  //   return products;
-  // });
 
   console.log("allProducts", allProducts);
 
@@ -41,7 +27,7 @@ const main = async function () {
     JSON.stringify(allProducts, null, 2)
   );
 
-  console.log("Arquivo criado com sucesso!");
+  console.log("Arquivo criado com sucesso!  ✅ ✅ ✅ ");
   await page.close();
 };
 
