@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "start:bot": "nodemon src/App.js"
+    "destroy": "rm -rf src/ScrapperResponses/products.json",
+    "start:bot": "yarn destroy && node src/App.js"
   },
   "repository": {
     "type": "git",

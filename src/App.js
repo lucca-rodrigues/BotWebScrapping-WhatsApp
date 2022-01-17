@@ -40,6 +40,7 @@ const main = async function (WhatsApp) {
     JSON.stringify(allProducts, null, 2)
   );
 
+  console.log("Arquivo criado com sucesso!");
   await page.close();
 };
 
