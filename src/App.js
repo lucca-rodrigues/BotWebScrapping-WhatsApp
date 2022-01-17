@@ -7,7 +7,11 @@ const main = async function (WhatsApp) {
     headless: false,
   });
   const page = await browser.newPage();
-  await page.goto(config.url);
+  await page.goto(config.url, {
+    waitUntil: "load",
+    // Remove the timeout
+    timeout: 0,
+  });
   // await page.addScriptTag({ path: "./Scrappers/getRestaurants.js" });
   // console.log("Listando produtos...");
 
@@ -40,4 +44,3 @@ const main = async function (WhatsApp) {
 };
 
 main();
-// module.exports = { main };
