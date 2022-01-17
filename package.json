@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "destroy": "rm -rf src/ScrapperResponses/products.json",
-    "start:bot": "yarn destroy && node src/App.js"
+    "start": "yarn destroy && node index.js",
+    "start:dev": "yarn destroy && nodemon index.js",
+    "destroy": "rm -rf src/ScrapperResponses/products.json"
   },
   "repository": {
     "type": "git",
