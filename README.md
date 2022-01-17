@@ -4,5 +4,5 @@
 * Rodar o comando para inicializar o bot
 ```sh
 yarn start:bot
-````
+```
 
